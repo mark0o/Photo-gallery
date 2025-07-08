@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+    <meta name="description" content="A beautiful collection of memories">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>My Photo Gallery</h1>
+            <p>A beautiful collection of memories</p>
+        </header>
+        
+        <div class="gallery">
+            
+            <div class="photo-item" data-src="images/1000027816.jpg" data-title="Lake" data-description="Bjutifl lej" data-date="2025-07-06" data-location="Lake">
+                <img src="images/1000027816.jpg" alt="Lake" class="photo-thumbnail">
+                <div class="photo-info">
+                    <div class="photo-title">Lake</div>
+                    <div class="photo-meta">
+                        <span>2025-07-06</span>
+                        <span>Lake</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="photo-item" data-src="images/1000027815.jpg" data-title="Bich" data-description="Stunning beech" data-date="2025-07-01" data-location="Bych caloforna">
+                <img src="images/1000027815.jpg" alt="Bich" class="photo-thumbnail">
+                <div class="photo-info">
+                    <div class="photo-title">Bich</div>
+                    <div class="photo-meta">
+                        <span>2025-07-01</span>
+                        <span>Bych caloforna</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="photo-item" data-src="images/1000027814.jpg" data-title="Máchovo jezero" data-description="Ráj 😍" data-date="2025-07-31" data-location="Máchovo jezero">
+                <img src="images/1000027814.jpg" alt="Máchovo jezero" class="photo-thumbnail">
+                <div class="photo-info">
+                    <div class="photo-title">Máchovo jezero</div>
+                    <div class="photo-meta">
+                        <span>2025-07-31</span>
+                        <span>Máchovo jezero</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close">&times;</span>
+                <img id="lightbox-image" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
+                    <div class="lightbox-meta">
+                        <span id="lightbox-date"></span>
+                        <span id="lightbox-location"></span>
+                    </div>
+                </div>
+                <div class="lightbox-nav">
+                    <button id="lightbox-prev">&lt;</button>
+                    <button id="lightbox-next">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
